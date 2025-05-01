@@ -1,3 +1,5 @@
+// Source: https://docs.mclimate.eu/mclimate-lorawan-devices/devices/mclimate-co2-display/mclimate-co2-display-uplink-decoder
+
 function decodeUplink(input) {
     try {
         var bytes = input.bytes;

@@ -1,3 +1,5 @@
+// Source: https://docs.mclimate.eu/mclimate-lorawan-devices/devices/mclimate-co2-sensor-and-notifier-lorawan/co2-sensor-uplink-decoder
+
 function decodeUplink(input) {
     try {
         var bytes = input.bytes;
