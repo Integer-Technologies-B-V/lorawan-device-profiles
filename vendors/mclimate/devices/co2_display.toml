@@ -1,0 +1,37 @@
+[device]
+  # Device name.
+  name = "CO2 Display"
+
+  # Device description.
+  description = "MClimate CO2 Display LoRaWAN is a stand-alone CO2 sensor powered entirely by solar energy using an organic solar panel. The device features a 2.9\" e-ink screen, sensor for movement (PIR), temperature and humidity sensor, LUX sensor and NDIR CO2 sensor."
+
+  # Device metadata (optional).
+  [device.metadata]
+    # Product URL.
+    product_url = "https://mclimate.eu/products/mclimate-co2-display-lorawan?variant=47859130958156"
+
+    # Documentation URL.
+    documentation_url = "https://docs.mclimate.eu/mclimate-lorawan-devices/devices/mclimate-co2-display"
+
+
+  # Device firmware version.
+  #
+  # This section can be repeated in case multiple firmware versions exist.
+  # As a new firmware version can change the supported profiles / regions and
+  # payload format, each firmware version has its own profiles and codec
+  # configuration.
+  [[device.firmware]]
+    # Firmware version.
+    version = "1.4"
+
+    # List of supported profiles.
+    #
+    # This list refers to one or multiple profiles in the profiles/ directory.
+    profiles = [
+      "EU868_1_0_3_A.toml",
+    ]
+
+    # Payload codec.
+    #
+    # In case no codec is available, you can remove this option.
+    codec = "co2_display.js"

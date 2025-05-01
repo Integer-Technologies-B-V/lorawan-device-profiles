@@ -1,0 +1,37 @@
+[device]
+  # Device name.
+  name = "CO2 Sensor and Notifier"
+
+  # Device description.
+  description = "MClimate CO2 Sensor and Notifier is a device that uses NDIR technology to measure the actual CO2 and has built in temperature and humidity sensors. The device also has acoustic and visual notification abilities to indicate occupants whether a room should be ventilated."
+
+  # Device metadata (optional).
+  [device.metadata]
+    # Product URL.
+    product_url = "https://mclimate.eu/products/mclimate-co2-sensor-notifier-lorawan?variant=47859023806796"
+
+    # Documentation URL.
+    documentation_url = "https://docs.mclimate.eu/mclimate-lorawan-devices/devices/mclimate-co2-sensor-and-notifier-lorawan"
+
+
+  # Device firmware version.
+  #
+  # This section can be repeated in case multiple firmware versions exist.
+  # As a new firmware version can change the supported profiles / regions and
+  # payload format, each firmware version has its own profiles and codec
+  # configuration.
+  [[device.firmware]]
+    # Firmware version.
+    version = "2.4"
+
+    # List of supported profiles.
+    #
+    # This list refers to one or multiple profiles in the profiles/ directory.
+    profiles = [
+      "EU868_1_0_3_A.toml",
+    ]
+
+    # Payload codec.
+    #
+    # In case no codec is available, you can remove this option.
+    codec = "co2_sensor.js"
