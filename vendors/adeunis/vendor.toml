@@ -1,12 +1,12 @@
 [vendor]
   # Vendor name.
-  name = "MClimate"
+  name = "Adeunis"
 
   # LoRa Alliance assigned Vendor ID.
   #
   # See also:
   # https://resources.lora-alliance.org/document/lora-alliance-vendor-id-20230915
-  id = 824
+  id = 16
 
   # OUIs owned by vendor (optional).
   # 
@@ -17,12 +17,10 @@
   #
   # This list refers to one or multiple devices in the devices/ directory.
   devices = [
-    "co2_display.toml",
-    "co2_sensor.toml",
-    "vicki_thermostat.toml"
+    "temp_ARF8180AR.toml",
   ]
 
   # Vendor metadata (optional).
   [vendor.metadata]
     # Vendor homepage.
-    homepage = "https://mclimate.eu/"
+    homepage = "https://www.adeunis.com/"

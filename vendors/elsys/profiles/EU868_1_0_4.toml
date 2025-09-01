@@ -1,0 +1,30 @@
+[profile]
+  # Region Common-name.
+  #
+  # Please refer to the LoRaWAN Regional Parameters specification for the available
+  # common-names.
+  region = "EU868"
+
+  # LoRaWAN mac-version (1.x.y).
+  mac_version = "1.0.4"
+
+  # LoRaWAN Regional Parameters revision.
+  #
+  # Examples: A, B, RP002-1.x.y.
+  reg_params_revision = "RP002-1.0.3"
+
+  # Device supports OTAA.
+  supports_otaa = true
+
+  # Device supports Class-B.
+  #
+  # If set to true, do not forget to configure class_b section below.
+  supports_class_b = false
+
+  # Device supports Class-C.
+  #
+  # If set to true, do not forget to configure class_c section below.
+  supports_class_c = false
+
+  # Max EIRP supported by device.
+  max_eirp = 16

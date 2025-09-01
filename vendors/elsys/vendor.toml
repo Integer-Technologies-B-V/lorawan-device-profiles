@@ -1,0 +1,21 @@
+[vendor]
+  # Vendor name.
+  name = "Elsys"
+
+  # LoRa Alliance assigned Vendor ID.
+  #
+  # See also:
+  # ttps://resources.lora-alliance.org/document/lora-alliance-vendor-id-20230915
+  id = 0
+
+  # List of devices.
+  #
+  # This list refers to one or multiple devices in the devices/ directory.
+  devices = [
+    "co2.toml"
+  ]
+
+  # Vendor metadata (optional).
+  [vendor.metadata]
+    # Vendor homepage.
+    homepage = "https://www.elsys.se"

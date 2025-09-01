@@ -1,0 +1,37 @@
+[device]
+  # Device name.
+  name = "TEMP ARF8180AR"
+
+  # Device description.
+  description = "Record temperatures: measure, track changes and alert if thresholds are exceeded."
+
+  # Device metadata (optional).
+  [device.metadata]
+    # Product URL.
+    product_url = "https://www.adeunis.com/en/produit/temp-temperature"
+
+    # Documentation URL.
+    documentation_url = "https://adeunis.notion.site/User-Guide-TEMP-TEMP2S-ARF8180AR_-LoRaWAN-EU863-870-dd3987b39a7c49daaf5746f946175013"
+
+
+  # Device firmware version.
+  #
+  # This section can be repeated in case multiple firmware versions exist.
+  # As a new firmware version can change the supported profiles / regions and
+  # payload format, each firmware version has its own profiles and codec
+  # configuration.
+  [[device.firmware]]
+    # Firmware version.
+    version = "1.2.0"
+
+    # List of supported profiles.
+    #
+    # This list refers to one or multiple profiles in the profiles/ directory.
+    profiles = [
+      "EU868_1_0_4_A.toml",
+    ]
+
+    # Payload codec.
+    #
+    # In case no codec is available, you can remove this option.
+    codec = "temp_ARF8180AR.js"

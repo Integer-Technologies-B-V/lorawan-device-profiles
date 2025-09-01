@@ -1,0 +1,37 @@
+[device]
+  # Device name.
+  name = "Vicki"
+
+  # Device description.
+  description = "Vicki is a smart thermostatic radiator valve (TRV) retrofitting radiators with thermostatic valve and allowing for temperature control and monitoring temperature and humidity from distance."
+
+  # Device metadata (optional).
+  [device.metadata]
+    # Product URL.
+    product_url = "https://mclimate.eu/products/vicki-lorawan?variant=47858829099340"
+
+    # Documentation URL.
+    documentation_url = "https://docs.mclimate.eu/mclimate-lorawan-devices/devices/mclimate-vicki-lorawan"
+
+
+  # Device firmware version.
+  #
+  # This section can be repeated in case multiple firmware versions exist.
+  # As a new firmware version can change the supported profiles / regions and
+  # payload format, each firmware version has its own profiles and codec
+  # configuration.
+  [[device.firmware]]
+    # Firmware version.
+    version = "4.2"
+
+    # List of supported profiles.
+    #
+    # This list refers to one or multiple profiles in the profiles/ directory.
+    profiles = [
+      "EU868_1_0_3_A.toml",
+    ]
+
+    # Payload codec.
+    #
+    # In case no codec is available, you can remove this option.
+    codec = "vicki_thermostat.js"
