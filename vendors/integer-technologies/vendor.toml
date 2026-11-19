@@ -1,0 +1,28 @@
+[vendor]
+  # Vendor name.
+  name = "Integer Technologies"
+
+  # LoRa Alliance assigned Vendor ID.
+  #
+  # See also:
+  # https://resources.lora-alliance.org/document/lora-alliance-vendor-id-20230915
+  
+  # TEMPORARY vendor ID
+  id = 749
+
+  # OUIs owned by vendor (optional).
+  # 
+  # Example: ouis = ["010203", "40506"]
+  ouis = []
+
+  # List of devices.
+  #
+  # This list refers to one or multiple devices in the devices/ directory.
+  devices = [
+    "P1_reader.toml",
+  ]
+
+  # Vendor metadata (optional).
+  [vendor.metadata]
+    # Vendor homepage.
+    homepage = "https://integer.energy/"

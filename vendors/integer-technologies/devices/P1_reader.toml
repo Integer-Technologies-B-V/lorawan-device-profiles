@@ -1,0 +1,37 @@
+[device]
+  # Device name.
+  name = "P1 Reader"
+
+  # Device description.
+  description = "Read P1 smart meter data"
+
+  # Device metadata (optional).
+  [device.metadata]
+    # Product URL.
+    product_url = "https://integer.energy/"
+
+    # Documentation URL.
+    documentation_url = "https://integer.energy/"
+
+
+  # Device firmware version.
+  #
+  # This section can be repeated in case multiple firmware versions exist.
+  # As a new firmware version can change the supported profiles / regions and
+  # payload format, each firmware version has its own profiles and codec
+  # configuration.
+  [[device.firmware]]
+    # Firmware version.
+    version = "1.2.0"
+
+    # List of supported profiles.
+    #
+    # This list refers to one or multiple profiles in the profiles/ directory.
+    profiles = [
+      "EU868_1_0_4_A.toml",
+    ]
+
+    # Payload codec.
+    #
+    # In case no codec is available, you can remove this option.
+    codec = "p1_reader.js"
