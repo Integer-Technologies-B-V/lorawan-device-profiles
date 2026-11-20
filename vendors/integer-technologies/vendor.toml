@@ -8,7 +8,7 @@
   # https://resources.lora-alliance.org/document/lora-alliance-vendor-id-20230915
   
   # TEMPORARY vendor ID
-  id = 749
+  vendor_id = 749
 
   # OUIs owned by vendor (optional).
   # 
